@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="phaser.js"></script>
+</head>
+<body>
+    <script src="scenes/menu.js"></script>
+    <script src="scenes/telaPrincipal.js"></script>
+    <script src="scenes/winner.js"></script>
+    <script src="scenes/gameOver.js"></script>
+    <script>
+        const config = {
+            type: Phaser.AUTO,
+            width: 1200,
+            height: 800,
+            backgroundColor: '#FFF',
+            scale: {
+                autoCenter: Phaser.Scale.CENTER_BOTH
+            },
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 300 },
+                    debug: true
+                }
+            },
+            scene: [Menu, TelaPrincipal, TelaVitoria, TelaPerdeu]
+        };
+
+        const game = new Phaser.Game(config);
+    </script>
+</body>
+</html>
