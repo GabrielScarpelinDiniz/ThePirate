@@ -1,4 +1,7 @@
 ### Nenhuma arte desse jogo é de autoria própria
+### Execução
+
+Para executar, basta rodar o arquivo `index.html` com a extensão 'Live Server' no Visual Studio Code
 
 ### REFERÊNCIAS:
 OpenGameArt, https://opengameart.org/content/sky-backdrop, acesso em 01 de mar. 2024

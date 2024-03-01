@@ -156,6 +156,7 @@ class TelaPrincipal extends Phaser.Scene {
       frameRate: 10,
       repeat: 1,
     });
+    //Animação do bau
     this.anims.create({
       key: "open",
       frames: this.anims.generateFrameNumbers("bau", {
@@ -166,7 +167,7 @@ class TelaPrincipal extends Phaser.Scene {
       repeat: 1,
     });
 
-    this.physics.add.overlap(this.pirata, this.bau, () => {
+    this.physics.add.overlap(this.pirata, this.bau, () => { //Adiciona o overlap entre o pirata e o bau
       if (this.chavePontuacao >= 6) {
         this.bau.anims.play("open", true); //Se o pirata tiver 6 chaves, o bau é aberto
         if (this.bau.anims.currentFrame.index === 9) {
