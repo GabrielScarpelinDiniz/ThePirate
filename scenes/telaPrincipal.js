@@ -1,12 +1,16 @@
 class TelaPrincipal extends Phaser.Scene {
   larguraJogo = 3840;
   alturaJogo = 800;
-  chavePontuacao = 0;
-  vidas = 3;
+  chavePontuacao;
+  vidas;
   constructor() {
     super({ key: "Game" });
+    this.chavePontuacao = 0; //Variável que armazena a pontuação de chaves
+    this.vidas = 3; //Variável que armazena a quantidade de vidas
   }
   preload() {
+    this.vidas = 3; //Variável que armazena a quantidade de vidas
+    this.chavePontuacao = 0; //Variável que armazena a pontuação de chaves
     this.load.spritesheet("spritePirata", "assets/spritesheet.png", {
       frameWidth: 300,
       frameHeight: 300,
