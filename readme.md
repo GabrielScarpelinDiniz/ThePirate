@@ -5,7 +5,7 @@ Para executar, basta rodar o arquivo `index.html` com a extensão 'Live Server' 
 <br>
 Link para acesso: https://gabrielscarpelindiniz.github.io/ThePirate/ 
 <br>
-Por algum motivo, a escala no GitHub pages está com problemas, não encontrei a solução. Recomendo tirar o zoom da página ou rodar no 'Live Server'
+
 
 ### REFERÊNCIAS:
 OpenGameArt, https://opengameart.org/content/sky-backdrop, acesso em 01 de mar. 2024
